@@ -12,7 +12,6 @@ import { Textarea } from './ui/textarea'
 import ReactDatePicker from 'react-datepicker'
 import { Input } from '@/components/ui/input'
 
-
 const MeetingTypeList = () => {
   const router = useRouter()
   const [meetingState, setmeetingState] = useState<
@@ -61,9 +60,8 @@ const MeetingTypeList = () => {
     }
   }
 
-  const meetingLink=`${process.env.NEXT_PUBLIC_BASE_URL}/meeting/${callDetails?.id}`
+  const meetingLink = `${process.env.NEXT_PUBLIC_BASE_URL}/meeting/${callDetails?.id}`
 
-  
   return (
     <section className="grid grid-cols-1 gap-5 md:grid-cols-2 xl:grid-cols-4">
       <Homecard
@@ -73,7 +71,7 @@ const MeetingTypeList = () => {
         handleClick={() => {
           setmeetingState('isInstantMeeting')
         }}
-        className="bg-orange-1"
+        className="bg-gradient-to-b from-[#020024] via-[#0A0A87] to-[#00D4FF] hover:scale-105 hover:opacity-90 transition-all duration-300 ease-in-out rounded-[14px] cursor-pointer"
       />
       <Homecard
         img="/icons/schedule.svg"
@@ -82,7 +80,7 @@ const MeetingTypeList = () => {
         handleClick={() => {
           setmeetingState('isScheduleMeeting')
         }}
-        className="bg-blue-1"
+        className="bg-gradient-to-b from-[#6a0dad] via-[#8a2be2] to-[#d896ff] hover:scale-105 hover:opacity-90 transition-all duration-300 ease-in-out rounded-[14px] cursor-pointer"
       />
       <Homecard
         img="/icons/recordings.svg"
@@ -91,7 +89,7 @@ const MeetingTypeList = () => {
         handleClick={() => {
           router.push('/recordings')
         }}
-        className="bg-purple-1"
+        className="bg-gradient-to-b from-[#D00000] via-[#FF1E00] to-[#FFB3B3] hover:scale-105 hover:opacity-90 transition-all duration-300 ease-in-out rounded-[14px] cursor-pointer"
       />
       <Homecard
         img="/icons/join-meeting.svg"
@@ -100,7 +98,7 @@ const MeetingTypeList = () => {
         handleClick={() => {
           setmeetingState('isJoiningMeeting')
         }}
-        className="bg-yellow-1"
+        className="bg-gradient-to-b from-[#FF7F11] via-[#FF5500] to-[#FFAA33] hover:scale-105 hover:opacity-90 transition-all duration-300 ease-in-out rounded-[14px] cursor-pointer"
       />
 
       {!callDetails ? (
@@ -171,12 +169,14 @@ const MeetingTypeList = () => {
         title="Type the link here"
         className="text-center"
         buttonText="Join meeting"
-        handleClick={()=> router.push(values.link)}
+        handleClick={() => router.push(values.link)}
       >
-        <Input placeholder='Meeting link' className='border-none bg-dark-3 focus-visible:ring-0 focus-visible:ring-offset-0'
-        onChange={(e) => setValues({...values, link: e.target.value})} />
+        <Input
+          placeholder="Meeting link"
+          className="border-none bg-dark-3 focus-visible:ring-0 focus-visible:ring-offset-0"
+          onChange={(e) => setValues({ ...values, link: e.target.value })}
+        />
       </MeetingModal>
-
     </section>
   )
 }
