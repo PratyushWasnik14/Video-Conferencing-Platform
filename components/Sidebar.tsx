@@ -20,7 +20,7 @@ const Sidebar = () => {
               className={cn(
                 'flex gap-4 items-center p-4 rounded-lg justify-start',
                 {
-                  'bg-gradient-to-b from-[#0A1D3D] via-[#0E2A58] to-[#163E72] hover:scale-105 hover:opacity-90 transition-all duration-300 ease-in-out rounded-[14px] cursor-pointer':
+                  'bg-gradient-to-b from-[#0A1D3D] via-[#0E2A58] to-[#163E72] border-2 border-[#ffffff]/50 hover:scale-105 hover:opacity-90 transition-all duration-300 ease-in-out rounded-[14px] cursor-pointer':
                     isActive,
                 }
               )}
