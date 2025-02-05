@@ -29,9 +29,4 @@ A feature-rich video conferencing platform built with **Next.js** and **TypeScri
 ✅ **Role-based Access Control:** Secure meetings with authentication and permissions.  
 ✅ **Responsive UI:** Fully optimized for **mobile, tablet, and desktop** using **Tailwind CSS**.  
 
-## 🎯 How to Run Locally  
-
-1️⃣ **Clone the Repository**  
-```bash
-git clone https://github.com/PratyushWasnik14/mooz.git
-cd zoom-clone
+🌐 **Live Demo:** [Click Here](mooz-pw.vercel.app)  
