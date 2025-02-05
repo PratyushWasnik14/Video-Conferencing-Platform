@@ -29,4 +29,4 @@ A feature-rich video conferencing platform built with **Next.js** and **TypeScri
 ✅ **Role-based Access Control:** Secure meetings with authentication and permissions.  
 ✅ **Responsive UI:** Fully optimized for **mobile, tablet, and desktop** using **Tailwind CSS**.  
 
-🌐 **Live Demo:** [Click Here](mooz-pw.vercel.app)  
+🌐 **Live Demo:** [Click Here](https://mooz-pw.vercel.app/)  
