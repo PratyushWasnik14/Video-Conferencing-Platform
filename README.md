@@ -1,4 +1,4 @@
-# 🚀 Zoom Clone – Video Conferencing Platform  
+# 🚀 Video Conferencing Platform  
 
 A feature-rich video conferencing platform built with **Next.js** and **TypeScript**, replicating Zoom's core functionalities. Users can securely log in, create meetings, and access various features like **recording, screen sharing, meeting scheduling, and participant management.**  
 
